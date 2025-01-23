@@ -1,0 +1,786 @@
+[
+	{
+		"id": 0,
+		"name": "GINEBRA Eau de parfum - 50 ml",
+		"price": 15999,
+		"description": "Una estrella radiante con luz propia. Fuerte, segura y seductora. Una fragancia amaderada con una personalidad extrema. La frescura de la flor de naranjo, el jazmín y el cassis ensamblados con el cautivante azafrán, el ámbar gris y las tonalidades del cedro recién cortado. Y en el fondo, el irresistible dulzor del caramelo y toda la calidez del musk.",
+		"stock": 100,
+		"categories": { "Todas": true, "Femeninas": true, "Eau de Parfum": true },
+		"rating": 1,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/003/190/616/products/fragancia_ginebra-442e26ac381857872d17250364025547-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/ginebra_montaje-2-c6455740410b927f4917068183746848-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/ginebra-frasco-2-b61763dedd59a6a78617068183801689-640-0.webp"
+		]
+	},
+	{
+		"id": 1,
+		"name": "MARSELLA Eau de Parfum - 50 ml",
+		"price": 15999,
+		"description": "Un golpe de aire fresco y libertad. Embriagante, desenfrenado y enigmático, un aroma adictivo que invita a una aventura irreverente en el medio de la noche.",
+		"stock": 10,
+		"categories": { "Todas": true, "Femeninas": true, "Eau de Parfum": true },
+		"rating": 4,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/003/190/616/products/marsella1-c05e7d858939de4e5d16859779919028-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/marsella1-c05e7d858939de4e5d16859779919028-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/edp-femenino_marsella1-7fce3a3520a98b9bca16866673127268-640-0.webp"
+		]
+	},
+	{
+		"id": 2,
+		"name": "FEMME Eau de Parfum - 50 ml",
+		"price": 15999,
+		"description": "La celebración de una nueva era de la feminidad, jovial, sensual y absolutamente irresistible. Una fragancia que transmite el espíritu y la fortaleza de una mujer segura de sí misma.",
+		"stock": 20,
+		"categories": { "Todas": true, "Femeninas": true, "Eau de Parfum": true },
+		"rating": 3,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/003/190/616/products/femme1-a3485d81867a41b86016859815160270-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/femme1-a3485d81867a41b86016859815160270-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/edp-femenino_femme1-9e7b026113d3c22e7616866673276994-640-0.webp"
+		]
+	},
+	{
+		"id": 3,
+		"name": "MANHATTAN ROSÉ Eau de Parfum - 50 ML",
+		"price": 15999,
+		"description": "Su espíritu glamouroso te hace brillar de día y de noche. Una fragancia fresca, dinámica y esencialmente femenina, que expresa el ritmo de la gran ciudad.",
+		"stock": 30,
+		"categories": { "Todas": true, "Femeninas": true, "Eau de Parfum": true },
+		"rating": 5,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/003/190/616/products/manhattan-rose1-7194d2de97952d1a9716859814625038-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/manhattan-rose1-7194d2de97952d1a9716859814625038-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/edp-femenino_manhattan-rose1-9648e85ffad5777bba16866673212215-640-0.webp"
+		]
+	},
+	{
+		"id": 4,
+		"name": "ESPARTA Eau de Parfum - 50 ml",
+		"price": 17000,
+		"description": "Seducción irresistible. Listo para cualquier desafío, sos la leyenda que siempre lleva las de ganar. Atrevete a un rayo de frescura y sensualidad, con un potente contraste en su aroma.",
+		"stock": 40,
+		"categories": { "Todas": true, "Masculinas": true, "Eau de Parfum": true },
+		"rating": 2,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/003/190/616/products/esparta1-cb280a8714aacc569316868373374550-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/esparta1-cb280a8714aacc569316868373374550-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/edp-masculino_esparta1-dbeab11c5107ee269216866672286137-640-0.webp"
+		]
+	},
+	{
+		"id": 5,
+		"name": "LAS VEGAS Eau de Parfum - 50 ml",
+		"price": 17000,
+		"description": "Carisma y energía insolente, provocadora, exacerbada. Siempre un paso más allá. La fragancia de los que consiguen lo que quieren.",
+		"stock": 50,
+		"categories": { "Todas": true, "Masculinas": true, "Eau de Parfum": true },
+		"rating": 1,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/003/190/616/products/las-vegas1-06109c28078b94699416868369344433-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/las-vegas1-06109c28078b94699416868369344433-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/edp-masculino_las-vegas1-dc607f581a0127804816866672246522-640-0.webp"
+		]
+	},
+	{
+		"id": 6,
+		"name": "NEW YORK MEN HEROES Eau de Parfum - 50 ml",
+		"price": 17000,
+		"description": "Una fragancia para sentirte siempre joven, que expresa la frescura y la autenticidad ilimitada. Un aroma que celebra la juventud, la libertad y la determinación del hombre que se destaca entre la multitud.",
+		"stock": 60,
+		"categories": { "Todas": true, "Masculinas": true, "Eau de Parfum": true },
+		"rating": 4,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/003/190/616/products/ny-heroes-masc1-d5cf819d4a79ddff2a16859788427242-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/ny-heroes-masc1-d5cf819d4a79ddff2a16859788427242-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/edp-masculino_new-york-men-heroes1-76c5c3d0fad92e87c416866671763790-640-0.webp"
+		]
+	},
+	{
+		"id": 7,
+		"name": "BUCAREST Eau de Parfum - 50 ml",
+		"price": 17000,
+		"description": "Un aroma radical. Fresco. Extremo y sensual. No hay límites para la fragancia que expresa los excesos.",
+		"stock": 70,
+		"categories": { "Todas": true, "Masculinas": true, "Eau de Parfum": true },
+		"rating": 3,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/003/190/616/products/bucarest1-738e6c9364bf77142416859792250771-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/bucarest1-738e6c9364bf77142416859792250771-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/003/190/616/products/edp-masculino_bucarest1-f6f4dd1c54953990a516866672462998-640-0.webp"
+		]
+	},
+	{
+		"id": 8,
+		"name": "Amsterdam - Pure XS Homme Homenaje",
+		"price": 36000,
+		"description": "Pure XS Homme Homenaje Bagues funde en una sola esencia sensualidad y frescor. La fragancia combina en cada etapa del perfume acordes cálidos y fríos para crear un aroma magnético e irresistible. Jengibre, salvia y tomillo aportan frescor y un toque aromático.",
+		"stock": 80,
+		"categories": { "Todas": true, "Masculinas": true, "Homenajes": true },
+		"rating": 5,
+		"thumbnail": "https://back.bagues.com.ar/Paginas/Imagens/Produtos/10272014G.jpg",
+		"images": [
+			"https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2020/11/pure-xs-homenaje-bagues.png",
+			"https://d22fxaf9t8d39k.cloudfront.net/564196566a5edcaa76c1eacc57c9e3d1b3d3689cdeb0856cb61f65806b5794be176280.png"
+		]
+	},
+	{
+		"id": 9,
+		"name": "Detroit - Bad Boy Homenaje",
+		"price": 36000,
+		"description": "Una fragancia explosiva y rebelde, para hombres que escriben su propio camino.",
+		"stock": 90,
+		"categories": { "Todas": true, "Masculinas": true, "Homenajes": true },
+		"rating": 2,
+		"thumbnail": "https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/08/detroit-homenaje-perfume-masculino-bagues.jpg",
+		"images": [
+			"https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/08/detroit-homenaje-perfume-masculino-bagues.jpg",
+			"https://dcdn.mitiendanube.com/stores/003/527/364/products/bad-boy1-054605cac65bce1fa316909080574855-640-0.png"
+		]
+	},
+	{
+		"id": 10,
+		"name": "Rhandom - Phantom Homenaje ",
+		"price": 36000,
+		"description": "Una fragancia futurista y audaz, un blend entre tradición perfumista y tecnología que revoluciona todo lo conocido. Atrevete a un destello energizante, con una atracción radicalmente diferente. Un aroma adictivo que revela al hombre poderoso y sexy.",
+		"stock": 100,
+		"categories": { "Todas": true, "Masculinas": true, "Homenajes": true },
+		"rating": 4,
+		"thumbnail": "https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/12/rhandom-homenaje-bagues-perfume-masculino.jpg",
+		"images": [
+			"https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/12/rhandom-homenaje-bagues-perfume-masculino.jpg",
+			"https://acdn.mitiendanube.com/stores/002/091/175/products/bcb9798d77c48e4c40b59faf98f151429a97337ff1af61c576ed79904de9861d183475-e7e40de1dc8ba9d37c17036171122413-1024-1024.jpg"
+		]
+	},
+	{
+		"id": 11,
+		"name": "New York Heroes - 212 Heroes Homenaje",
+		"price": 36000,
+		"description": "Una fragancia para sentirte siempre joven, que expresa la frescura y la autenticidad ilimitada. Un aroma que celebra la juventud, la libertad y la determinación del hombre que se destaca entre la multitud.",
+		"stock": 110,
+		"categories": { "Todas": true, "Masculinas": true, "Homenajes": true },
+		"rating": 3,
+		"thumbnail": "https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/12/new-york-heroe-homenaje-masc-bagues.jpg",
+		"images": [
+			"https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/12/new-york-heroe-homenaje-masc-bagues.jpg",
+			"https://dcdn.mitiendanube.com/stores/003/527/364/products/newyork-heroes-a4050c595dced7b30d17188098918455-640-0.png"
+		]
+	},
+	{
+		"id": 12,
+		"name": "París  - La Vida es Bella Homenaje",
+		"price": 36000,
+		"description": "Fresca, deliciosa y con una delicada personalidad, como las mujeres que la eligen. Una fragancia alegre que florece para despertar sonrisas e irradiar felicidad.",
+		"stock": 120,
+		"categories": { "Todas": true, "Femeninas": true, "Homenajes": true },
+		"rating": 4,
+		"thumbnail": "https://acdn.mitiendanube.com/stores/001/267/243/products/paris-homenaje-53f341e424d486f44217101861611028-640-0.webp",
+		"images": [
+			"https://acdn.mitiendanube.com/stores/001/267/243/products/paris-homenaje-53f341e424d486f44217101861611028-640-0.webp",
+			"https://acdn.mitiendanube.com/stores/001/267/243/products/paris-d73c1ba8ba8d56c97517101861587855-640-0.webp"
+		]
+	},
+	{
+		"id": 13,
+		"name": "Marsella - Scandal By Night Homenaje",
+		"price": 36000,
+		"description": "Un golpe de aire fresco y libertad. Embriagante y enigmático, un aroma adictivo que invita a una aventura irreverente.",
+		"stock": 130,
+		"categories": { "Todas": true, "Femeninas": true, "Homenajes": true },
+		"rating": 5,
+		"thumbnail": "https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/08/marsella-homenaje-web.png",
+		"images": [
+			"https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/08/marsella-homenaje-web.png",
+			"https://d22fxaf9t8d39k.cloudfront.net/b14fd3c2c1d82383bac0c2c385e83bea0db2cacedc89bb4f9c1b39a0ced308966987.jpg"
+		]
+	},
+	{
+		"id": 14,
+		"name": "Los Angeles - Lady Million Homenaje",
+		"price": 36000,
+		"description": "Es momento de sentirte deslumbrante con esta fragancia sensual y demoledora que nunca pasa desapercibida. Para mujeres atrevidas que brillan como una estrella de Hollywood y resplandecen como un diamante.",
+		"stock": 140,
+		"categories": { "Todas": true, "Femeninas": true, "Homenajes": true },
+		"rating": 2,
+		"thumbnail": "https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/08/lady-milion-bagues-perfume-mujer.jpg",
+		"images": [
+			"https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/08/lady-milion-bagues-perfume-mujer.jpg",
+			"https://d22fxaf9t8d39k.cloudfront.net/e48cf3d962d5529d5b157d0b364784dd3b0b1f7121f48724a97ebf8ee3fe0ab2165645.jpg"
+		]
+	},
+	{
+		"id": 15,
+		"name": "Atenas - Olympia Homenaje",
+		"price": 36000,
+		"description": "El poder divino de una mujer que fascina a su paso. Inolvidable, desata pasiones. Una fragancia sensual, fresca y cautivadora.",
+		"stock": 150,
+		"categories": { "Todas": true, "Femeninas": true, "Homenajes": true },
+		"rating": 5,
+		"thumbnail": "https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/07/atenas-homneja-bagues-600x600.jpg",
+		"images": [
+			"https://fraganciasinternacionalesbagues.com.ar/wp-content/uploads/2023/07/atenas-homneja-bagues-600x600.jpg",
+			"https://dcdn.mitiendanube.com/stores/002/689/789/products/whatsapp-image-2023-01-21-at-22-01-111-59ab0463a19fa5a3ee16743496391537-1024-1024.jpeg"
+		]
+	},
+
+	{
+		"id": 16,
+		"name": "Unisex Fresh",
+		"price": 28000,
+		"description": "Fragancia fresca y vibrante para todos, perfecta para cualquier ocasión.",
+		"stock": 120,
+		"categories": { "Todas": true, "Unisex": true },
+		"rating": 4,
+		"thumbnail": "https://www.bellavitaluxe.com/cdn/shop/files/Artboard_16.jpg?v=1732538126",
+		"images": [
+			"https://www.bellavitaluxe.com/cdn/shop/files/Artboard_16.jpg?v=1732538126",
+			"https://www.bellavitaluxe.com/cdn/shop/files/4_2f5549c7-6a06-479f-b00f-0de5c130f696.jpg?v=1717674129"
+		]
+	},
+	{
+		"id": 17,
+		"name": "Unisex Harmony",
+		"price": 29000,
+		"description": "Equilibrio perfecto en una fragancia ideal para el día a día.",
+		"stock": 130,
+		"categories": { "Todas": true, "Unisex": true },
+		"rating": 5,
+		"thumbnail": "https://cocobellacompany.com/cdn/shop/files/IMG_1393.jpg?v=1720736860",
+		"images": [
+			"https://cocobellacompany.com/cdn/shop/files/IMG_1393.jpg?v=1720736860",
+			"https://cdnx.jumpseller.com/al-arab/image/57658375/thumb/1000/1000?1732716262"
+		]
+	},
+	{
+		"id": 18,
+		"name": "Unisex Urban",
+		"price": 31000,
+		"description": "Un aroma moderno diseñado para todos los géneros.",
+		"stock": 110,
+		"categories": { "Todas": true, "Unisex": true },
+		"rating": 3,
+		"thumbnail": "https://www.vure.com.ar/wp-content/uploads/2021/08/urban.webp",
+		"images": [
+			"https://www.vure.com.ar/wp-content/uploads/2021/08/urban.webp",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99UQdcWXmPDBMJIp2h84TSMTgI5JLCuF6uGTyFf0Mu5UWlffH4NRMUO4vuT2IL2vyEqA&usqp=CAU"
+		]
+	},
+	{
+		"id": 19,
+		"name": "Unisex Breeze",
+		"price": 32000,
+		"description": "Frescura natural para quienes buscan simplicidad.",
+		"stock": 100,
+		"categories": { "Todas": true, "Unisex": true },
+		"rating": 4,
+		"thumbnail": "https://m.media-amazon.com/images/I/41y3Bi-BfmL._SL1000_.jpg",
+		"images": [
+			"https://m.media-amazon.com/images/I/41y3Bi-BfmL._SL1000_.jpg",
+			"https://jpt.cl/wp-content/uploads/2024/02/01LATPBREEZEPUUN100.jpg"
+		]
+	},
+
+	{
+		"id": 20,
+		"name": "Eau de Toilette Blossom",
+		"price": 30000,
+		"description": "Elegancia en cada gota, con notas florales que cautivan.",
+		"stock": 100,
+		"categories": { "Todas": true, "Unisex": true, "Eau de Toilette": true },
+		"rating": 2,
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOodg_sJo9hGIY16jCjCcelCThAhVt9IlWQA&s",
+		"images": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOodg_sJo9hGIY16jCjCcelCThAhVt9IlWQA&s",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9hKLgehEbxxCWDUmT_xSSgUO6gc4smi9qqA&s"
+		]
+	},
+	{
+		"id": 21,
+		"name": "Eau de Toilette Sunrise",
+		"price": 31000,
+		"description": "Fragancia ligera inspirada en la frescura de un amanecer.",
+		"stock": 90,
+		"categories": { "Todas": true, "Eau de Toilette": true },
+		"rating": 5,
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzIuDTA_DGiWm-qRxBjRuMMjw0jg8B01HU8bn-_BDvkijq210LMOIZWw2kUuX8zr7ehq0&usqp=CAU",
+		"images": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzIuDTA_DGiWm-qRxBjRuMMjw0jg8B01HU8bn-_BDvkijq210LMOIZWw2kUuX8zr7ehq0&usqp=CAU",
+			"https://cdn.fragrancenet.com/images/photos/900x900/230529.jpg"
+		]
+	},
+	{
+		"id": 22,
+		"name": "Eau de Toilette Velvet",
+		"price": 32000,
+		"description": "Suavidad y estilo en un aroma único.",
+		"stock": 85,
+		"categories": { "Todas": true, "Eau de Toilette": true },
+		"rating": 3,
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4RMdithY3MLbxszS7NDsLPA86vtsrHAMNiHf_HFtJTsBYqIdUGEfupIjpwJOxAGIZJHg&usqp=CAU",
+		"images": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4RMdithY3MLbxszS7NDsLPA86vtsrHAMNiHf_HFtJTsBYqIdUGEfupIjpwJOxAGIZJHg&usqp=CAU",
+			"https://http2.mlstatic.com/D_NQ_NP_741317-MLU75601251658_042024-O.webp"
+		]
+	},
+	{
+		"id": 23,
+		"name": "Eau de Toilette Oasis",
+		"price": 33000,
+		"description": "Escapa a un oasis de frescura con esta fragancia irresistible.",
+		"stock": 95,
+		"categories": { "Todas": true, "Femeninas": true, "Eau de Toilette": true },
+		"rating": 1,
+		"thumbnail": "https://fimgs.net/mdimg/perfume/375x500.64168.jpg",
+		"images": [
+			"https://fimgs.net/mdimg/perfume/375x500.64168.jpg",
+			"https://i.pinimg.com/736x/4f/b3/4a/4fb34a3b1c32a45b711ea32cf6059b57.jpg"
+		]
+	},
+
+	{
+		"id": 24,
+		"name": "Eau de Cologne Breeze",
+		"price": 25000,
+		"description": "Ligereza y frescura en una fragancia versátil.",
+		"stock": 150,
+		"categories": { "Todas": true, "Masculinas": true, "Eau de Cologne": true },
+		"rating": 2,
+		"thumbnail": "https://fandi-perfume.com/cdn/shop/files/oceanb_1080x.jpg?v=1719934394",
+		"images": [
+			"https://fandi-perfume.com/cdn/shop/files/oceanb_1080x.jpg?v=1719934394",
+			"https://disfragancias.com/cdn/shop/files/emperoceanbreeze.jpg?v=1717092384"
+		]
+	},
+	{
+		"id": 25,
+		"name": "Eau de Cologne Citrus",
+		"price": 24000,
+		"description": "Aroma cítrico perfecto para el verano.",
+		"stock": 140,
+		"categories": { "Todas": true, "Femeninas": true, "Eau de Cologne": true },
+		"rating": 4,
+		"thumbnail": "https://staticar.natura.com/cdn/ff/F_msxVYVJE88_Ll9BgEc0FEc0ahhoSwxZHZvBQ26Kf8/1735566185/public/products/739052_1_2.jpg",
+		"images": [
+			"https://staticar.natura.com/cdn/ff/F_msxVYVJE88_Ll9BgEc0FEc0ahhoSwxZHZvBQ26Kf8/1735566185/public/products/739052_1_2.jpg",
+			"https://http2.mlstatic.com/D_NQ_NP_632410-MLA49988145650_052022-O.webp"
+		]
+	},
+	{
+		"id": 26,
+		"name": "Eau de Cologne Lavender",
+		"price": 26000,
+		"description": "Tranquilidad en un frasco, con notas de lavanda.",
+		"stock": 120,
+		"categories": { "Todas": true, "Femeninas": true, "Eau de Cologne": true },
+		"rating": 4,
+		"thumbnail": "https://http2.mlstatic.com/D_NQ_NP_785713-MLA79423352155_092024-O.webp",
+		"images": [
+			"https://http2.mlstatic.com/D_NQ_NP_785713-MLA79423352155_092024-O.webp",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-aIxOwpOYWuNwRheKd5EKRP3Fw8Op2EtprjhrgukGm21jDv9p8a_Ze_dYlTgvhaaTI0&usqp=CAU"
+		]
+	},
+	{
+		"id": 27,
+		"name": "Eau de Cologne Ocean",
+		"price": 27000,
+		"description": "Una brisa marina en cada aplicación.",
+		"stock": 110,
+		"categories": { "Todas": true, "Masculinas": true, "Eau de Cologne": true },
+		"rating": 5,
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Se9UqCJVttVxPQQHbzXffyQOi8Za41x-EQ&s",
+		"images": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Se9UqCJVttVxPQQHbzXffyQOi8Za41x-EQ&s",
+			"https://i.ebayimg.com/images/g/EZAAAOSwCZlmSwLG/s-l1200.jpg"
+		]
+	},
+
+	{
+		"id": 28,
+		"name": "Eau de Parfum Intense Ruby",
+		"price": 45000,
+		"description": "Una fragancia intensa y seductora con notas de frutos rojos.",
+		"stock": 90,
+		"categories": { "Todas": true, "Eau de Parfum Intense": true },
+		"rating": 4,
+		"thumbnail": "https://static.wixstatic.com/media/bdaab8_9f5173e2f335459e93b7735a4a97ec99~mv2.jpg/v1/fill/w_980,h_1307,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bdaab8_9f5173e2f335459e93b7735a4a97ec99~mv2.jpg",
+		"images": [
+			"https://static.wixstatic.com/media/bdaab8_9f5173e2f335459e93b7735a4a97ec99~mv2.jpg/v1/fill/w_980,h_1307,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bdaab8_9f5173e2f335459e93b7735a4a97ec99~mv2.jpg",
+			"https://static.wixstatic.com/media/bdaab8_9f5173e2f335459e93b7735a4a97ec99~mv2.jpg/v1/fill/w_980,h_1307,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bdaab8_9f5173e2f335459e93b7735a4a97ec99~mv2.jpg"
+		]
+	},
+	{
+		"id": 29,
+		"name": "Eau de Parfum Intense Noir",
+		"price": 47000,
+		"description": "Oscuro y misterioso, para quienes buscan destacar.",
+		"stock": 85,
+		"categories": {
+			"Todas": true,
+			"Unisex": true,
+			"Eau de Parfum Intense": true
+		},
+		"rating": 3,
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLqq-8vQemzF5OcJM2P_wiFDa0gW5slbGYgA&s",
+		"images": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLqq-8vQemzF5OcJM2P_wiFDa0gW5slbGYgA&s",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLqq-8vQemzF5OcJM2P_wiFDa0gW5slbGYgA&s"
+		]
+	},
+	{
+		"id": 30,
+		"name": "Eau de Parfum Intense Amber",
+		"price": 46000,
+		"description": "Calidez y lujo en una fragancia inolvidable.",
+		"stock": 80,
+		"categories": {
+			"Todas": true,
+			"Masculinas": true,
+			"Eau de Parfum Intense": true
+		},
+		"rating": 3,
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmVuqIjGkpUApw32cxykiv70GSOFwBpji-w&s",
+		"images": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmVuqIjGkpUApw32cxykiv70GSOFwBpji-w&s",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmVuqIjGkpUApw32cxykiv70GSOFwBpji-w&s"
+		]
+	},
+	{
+		"id": 31,
+		"name": "Eau de Parfum Intense Sapphire",
+		"price": 48000,
+		"description": "Elegante y sofisticado, inspirado en joyas preciosas.",
+		"stock": 70,
+		"categories": {
+			"Todas": true,
+			"Masculinas": true,
+			"Eau de Parfum Intense": true
+		},
+		"rating": 4,
+		"thumbnail": "https://balade-orientale.com/cdn/shop/files/bluesaphir_570x.jpg?v=1699577358",
+		"images": [
+			"https://balade-orientale.com/cdn/shop/files/bluesaphir_570x.jpg?v=1699577358",
+			"https://balade-orientale.com/cdn/shop/files/bluesaphir_570x.jpg?v=1699577358"
+		]
+	},
+
+	{
+		"id": 32,
+		"name": "Aphrodisiac Passion",
+		"price": 52000,
+		"description": "Despierta tus sentidos con esta fragancia cautivadora.",
+		"stock": 60,
+		"categories": { "Todas": true, "Aphrodisiacs": true },
+		"rating": 5,
+		"thumbnail": "https://daluaherbals.com/wp-content/uploads/2022/01/Passion5-scaled.jpg",
+		"images": [
+			"https://daluaherbals.com/wp-content/uploads/2022/01/Passion5-scaled.jpg",
+			"https://daluaherbals.com/wp-content/uploads/2022/01/Passion5-scaled.jpg"
+		]
+	},
+	{
+		"id": 33,
+		"name": "Aphrodisiac Temptation",
+		"price": 53000,
+		"description": "Una fragancia irresistible para momentos especiales.",
+		"stock": 55,
+		"categories": { "Todas": true, "Aphrodisiacs": true },
+		"rating": 3,
+		"thumbnail": "https://theduabrand.pk/cdn/shop/products/Old-School-Charm_900x.png?v=1659011224",
+		"images": [
+			"https://theduabrand.pk/cdn/shop/products/Old-School-Charm_900x.png?v=1659011224",
+			"https://theduabrand.pk/cdn/shop/products/Old-School-Charm_900x.png?v=1659011224"
+		]
+	},
+	{
+		"id": 34,
+		"name": "Aphrodisiac Allure",
+		"price": 54000,
+		"description": "Encanto y sensualidad en una fragancia única.",
+		"stock": 50,
+		"categories": { "Todas": true, "Aphrodisiacs": true },
+		"rating": 2,
+		"thumbnail": "https://static.jazp.com/uploads_700x600/202010/2b3724b33613913c1734a34cab7413a3.jpeg",
+		"images": [
+			"https://static.jazp.com/uploads_700x600/202010/2b3724b33613913c1734a34cab7413a3.jpeg",
+			"https://static.jazp.com/uploads_700x600/202010/2b3724b33613913c1734a34cab7413a3.jpeg"
+		]
+	},
+	{
+		"id": 35,
+		"name": "Aphrodisiac Desire",
+		"price": 55000,
+		"description": "El deseo hecho aroma, con notas exóticas.",
+		"stock": 45,
+		"categories": { "Todas": true, "Aphrodisiacs": true },
+		"rating": 4,
+		"thumbnail": "https://rougeb2car.vtexassets.com/arquivos/ids/225061/6294015178340_1.jpg?v=638677333656230000",
+		"images": [
+			"https://rougeb2car.vtexassets.com/arquivos/ids/225061/6294015178340_1.jpg?v=638677333656230000",
+			"https://rougeb2car.vtexassets.com/arquivos/ids/225061/6294015178340_1.jpg?v=638677333656230000"
+		]
+	},
+
+	{
+		"id": 36,
+		"name": "Limited Edition Pearl",
+		"price": 60000,
+		"description": "Exclusiva y refinada, edición limitada.",
+		"stock": 20,
+		"categories": { "Todas": true, "Unisex": true, "Limited Edition": true },
+		"rating": 3,
+		"thumbnail": "https://m.media-amazon.com/images/I/61pZBRrmylL._AC_UF350,350_QL50_.jpg",
+		"images": [
+			"https://m.media-amazon.com/images/I/61pZBRrmylL._AC_UF350,350_QL50_.jpg",
+			"https://m.media-amazon.com/images/I/61pZBRrmylL._AC_UF350,350_QL50_.jpg"
+		]
+	},
+	{
+		"id": 37,
+		"name": "Limited Edition Gold",
+		"price": 62000,
+		"description": "Lujo y exclusividad en una fragancia dorada.",
+		"stock": 18,
+		"categories": { "Todas": true, "Femeninas": true, "Limited Edition": true },
+		"rating": 2,
+		"thumbnail": "https://i5.walmartimages.com/asr/ad06bdac-b009-4389-b8aa-7f87ecff6ba3.d57f5c4baf99e41252a355f2ad10d61b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+		"images": [
+			"https://i5.walmartimages.com/asr/ad06bdac-b009-4389-b8aa-7f87ecff6ba3.d57f5c4baf99e41252a355f2ad10d61b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+			"https://i5.walmartimages.com/asr/ad06bdac-b009-4389-b8aa-7f87ecff6ba3.d57f5c4baf99e41252a355f2ad10d61b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+		]
+	},
+	{
+		"id": 38,
+		"name": "Limited Edition Silver",
+		"price": 61000,
+		"description": "Un toque de exclusividad en una edición limitada plateada.",
+		"stock": 15,
+		"categories": {
+			"Todas": true,
+			"Masculinas": true,
+			"Limited Edition": true
+		},
+		"rating": 2,
+		"thumbnail": "https://sajaperfume.com/wp-content/uploads/2021/01/Silver-.jpg",
+		"images": [
+			"https://sajaperfume.com/wp-content/uploads/2021/01/Silver-.jpg",
+			"https://sajaperfume.com/wp-content/uploads/2021/01/Silver-.jpg"
+		]
+	},
+	{
+		"id": 39,
+		"name": "Limited Edition Diamond",
+		"price": 70000,
+		"description": "Brilla como un diamante con esta fragancia exclusiva.",
+		"stock": 10,
+		"categories": { "Todas": true, "Limited Edition": true },
+		"rating": 4,
+		"thumbnail": "https://i.ebayimg.com/00/s/MTYwMFgxMDU4/z/rzAAAOSwD75lMVZ8/$_57.JPG?set_id=880000500F",
+		"images": [
+			"https://i.ebayimg.com/00/s/MTYwMFgxMDU4/z/rzAAAOSwD75lMVZ8/$_57.JPG?set_id=880000500F",
+			"https://i.ebayimg.com/00/s/MTYwMFgxMDU4/z/rzAAAOSwD75lMVZ8/$_57.JPG?set_id=880000500F"
+		]
+	},
+
+	{
+		"id": 40,
+		"name": "Exclusive Essence",
+		"price": 80000,
+		"description": "Una fragancia única, creada para los más exigentes.",
+		"stock": 30,
+		"categories": { "Todas": true, "Unisex": true, "Exclusives": true },
+		"rating": 3,
+		"thumbnail": "https://beauteflorale.com/cdn/shop/files/EssencialExclusivoFraganciaFemenina.jpg?v=1690895341",
+		"images": [
+			"https://beauteflorale.com/cdn/shop/files/EssencialExclusivoFraganciaFemenina.jpg?v=1690895341",
+			"https://beauteflorale.com/cdn/shop/files/EssencialExclusivoFraganciaFemenina.jpg?v=1690895341"
+		]
+	},
+	{
+		"id": 41,
+		"name": "Exclusive Velvet",
+		"price": 85000,
+		"description": "Aroma elegante y refinado, solo para momentos especiales.",
+		"stock": 25,
+		"categories": { "Todas": true, "Femeninas": true, "Exclusives": true },
+		"rating": 1,
+		"thumbnail": "https://fimgs.net/mdimg/perfume/375x500.70856.jpg",
+		"images": [
+			"https://fimgs.net/mdimg/perfume/375x500.70856.jpg",
+			"https://fimgs.net/mdimg/perfume/375x500.70856.jpg"
+		]
+	},
+	{
+		"id": 42,
+		"name": "Exclusive Mystique",
+		"price": 87000,
+		"description": "Con una mezcla de maderas exóticas y especias.",
+		"stock": 22,
+		"categories": { "Todas": true, "Masculinas": true, "Exclusives": true },
+		"rating": 1,
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoV7mnB9faPm8Nm325LP2Z50bH95bW9PvQoQ&s",
+		"images": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoV7mnB9faPm8Nm325LP2Z50bH95bW9PvQoQ&s",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoV7mnB9faPm8Nm325LP2Z50bH95bW9PvQoQ&s"
+		]
+	},
+	{
+		"id": 43,
+		"name": "Exclusive Charm",
+		"price": 89000,
+		"description": "Aroma seductor y envolvente para quienes buscan lo mejor.",
+		"stock": 18,
+		"categories": { "Todas": true, "Unisex": true, "Exclusives": true },
+		"rating": 4,
+		"thumbnail": "https://duftbd.com/cdn/shop/files/YSLYCHARMDUFTPERFUMEBANGLADESH.heic?v=1710682993&width=1946",
+		"images": [
+			"https://duftbd.com/cdn/shop/files/YSLYCHARMDUFTPERFUMEBANGLADESH.heic?v=1710682993&width=1946",
+			"https://duftbd.com/cdn/shop/files/YSLYCHARMDUFTPERFUMEBANGLADESH.heic?v=1710682993&width=1946"
+		]
+	},
+
+	{
+		"id": 44,
+		"name": "Extrait de Parfum Royal",
+		"price": 92000,
+		"description": "La esencia más pura, un lujo en cada gota.",
+		"stock": 15,
+		"categories": {
+			"Todas": true,
+			"Femeninas": true,
+			"Eau de Parfum Extrait": true
+		},
+		"rating": 5,
+		"thumbnail": "https://luxurious-fragrances.com/wp-content/uploads/2020/04/le-royal.jpg",
+		"images": [
+			"https://luxurious-fragrances.com/wp-content/uploads/2020/04/le-royal.jpg",
+			"https://luxurious-fragrances.com/wp-content/uploads/2020/04/le-royal.jpg"
+		]
+	},
+	{
+		"id": 45,
+		"name": "Extrait de Parfum Imperial",
+		"price": 94000,
+		"description": "Para quienes aprecian la calidad superior en perfumes.",
+		"stock": 12,
+		"categories": {
+			"Todas": true,
+			"Masculinas": true,
+			"Eau de Parfum Extrait": true
+		},
+		"rating": 5,
+		"thumbnail": "https://www.onlinehaarshop.nl/cdn/shop/files/Collection-Premium-Imperial-Extrait-de-Parfum-50-ml-1.jpg?v=1708007906&width=1946",
+		"images": [
+			"https://www.onlinehaarshop.nl/cdn/shop/files/Collection-Premium-Imperial-Extrait-de-Parfum-50-ml-1.jpg?v=1708007906&width=1946",
+			"https://www.onlinehaarshop.nl/cdn/shop/files/Collection-Premium-Imperial-Extrait-de-Parfum-50-ml-1.jpg?v=1708007906&width=1946"
+		]
+	},
+	{
+		"id": 46,
+		"name": "Extrait de Parfum Nocturne",
+		"price": 96000,
+		"description": "Una fragancia intensa y misteriosa que solo los más selectos pueden disfrutar.",
+		"stock": 10,
+		"categories": {
+			"Todas": true,
+			"Femeninas": true,
+			"Eau de Parfum Extrait": true
+		},
+		"rating": 4,
+		"thumbnail": "https://cygnetperfumery.com.au/cdn/shop/files/Untitled_design_11.png?v=1724316110",
+		"images": [
+			"https://cygnetperfumery.com.au/cdn/shop/files/Untitled_design_11.png?v=1724316110",
+			"https://cygnetperfumery.com.au/cdn/shop/files/Untitled_design_11.png?v=1724316110"
+		]
+	},
+	{
+		"id": 47,
+		"name": "Extrait de Parfum Sublime",
+		"price": 98000,
+		"description": "Una fragancia para quienes buscan la perfección.",
+		"stock": 4,
+		"categories": {
+			"Todas": true,
+			"Masculinas": true,
+			"Eau de Parfum Extrait": true
+		},
+		"rating": 9,
+		"thumbnail": "https://parfumistas.com/wp-content/uploads/2024/09/zara_tobacco_sublime_b.jpg",
+		"images": [
+			"https://parfumistas.com/wp-content/uploads/2024/09/zara_tobacco_sublime_b.jpg",
+			"https://parfumistas.com/wp-content/uploads/2024/09/zara_tobacco_sublime_b.jpg"
+		]
+	},
+
+	{
+		"id": 48,
+		"name": "Eau de Parfum Absolute Luxury",
+		"price": 100000,
+		"description": "Un lujo absoluto, la fragancia más exclusiva.",
+		"stock": 5,
+		"categories": {
+			"Todas": true,
+			"Eau de Parfum Absolute": true
+		},
+		"rating": 10,
+		"thumbnail": "https://almirah.com.pk/cdn/shop/files/1_11_77_620x.jpg?v=1736241809",
+		"images": [
+			"https://almirah.com.pk/cdn/shop/files/1_11_77_620x.jpg?v=1736241809",
+			"https://almirah.com.pk/cdn/shop/files/1_11_77_620x.jpg?v=1736241809"
+		]
+	},
+	{
+		"id": 49,
+		"name": "Eau de Parfum Absolute Prestige",
+		"price": 105000,
+		"description": "La fragancia definitiva, para aquellos que aprecian lo mejor.",
+		"stock": 4,
+		"categories": {
+			"Todas": true,
+			"Masculinas": true,
+			"Eau de Parfum Absolute": true
+		},
+		"rating": 10,
+		"thumbnail": "https://fimgs.net/mdimg/perfume/375x500.21600.jpg",
+		"images": [
+			"https://fimgs.net/mdimg/perfume/375x500.21600.jpg",
+			"https://fimgs.net/mdimg/perfume/375x500.21600.jpg"
+		]
+	},
+	{
+		"id": 50,
+		"name": "Eau de Parfum Absolute Serenity",
+		"price": 110000,
+		"description": "Para los momentos de serenidad y paz, una fragancia pura.",
+		"stock": 3,
+		"categories": {
+			"Todas": true,
+			"Unisex": true,
+			"Eau de Parfum Absolute": true
+		},
+		"rating": 9,
+		"thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6pybP5ZOvSmxfVmEPDk_JK2BHmSAIn4EQg&s",
+		"images": [
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6pybP5ZOvSmxfVmEPDk_JK2BHmSAIn4EQg&s",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6pybP5ZOvSmxfVmEPDk_JK2BHmSAIn4EQg&s"
+		]
+	},
+	{
+		"id": 51,
+		"name": "Eau de Parfum Absolute Essence",
+		"price": 115000,
+		"description": "Una fragancia sublime con notas florales y amaderadas.",
+		"stock": 2,
+		"categories": {
+			"Todas": true,
+			"Femeninas": true,
+			"Eau de Parfum Absolute": true
+		},
+		"rating": 3,
+		"thumbnail": "https://http2.mlstatic.com/D_NQ_NP_810422-MLA46364813235_062021-O.webp",
+		"images": [
+			"https://http2.mlstatic.com/D_NQ_NP_810422-MLA46364813235_062021-O.webp",
+			"https://http2.mlstatic.com/D_NQ_NP_810422-MLA46364813235_062021-O.webp"
+		]
+	}
+]

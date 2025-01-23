@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'react-native';
+import colors from './src/globals/colors';
+import { useFonts } from 'expo-font';
+import fonts from './src/globals/fonts';
+import Navigator from './src/Navigation/Navigator';
+import { Provider } from 'react-redux';
+import store from './src/store';
+import { init } from './src/config/dbSqlite';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+	const [fontsLoaded] = useFonts(fonts);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+	if (!fontsLoaded) {
+		return null;
+	}
+
+	return (
+		<>
+			<Provider store={store}>
+				<Navigator />
+			</Provider>
+			<StatusBar
+				style='auto'
+				backgroundColor={colors.secondary}
+			/>
+		</>
+	);
+}
