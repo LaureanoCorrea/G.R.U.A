@@ -2,15 +2,20 @@ import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
 import CardForCart from '../components/CardForCart';
 import colors from '../globals/colors';
 import ErrorBoundary from '../ErrorBoundary';
-import { usePostOrderMutation } from '../services/orders';
+import { usePostOrdersMutation } from '../services/orders';
 import { useSelector } from 'react-redux';
-import { useGetCartQuery } from '../services/cart';
+import { useCleanCartMutation, useGetCartQuery } from '../services/cart';
 import { useEffect, useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
+import LoadingSpinner from '../components/LoadingSpinner';
+import EmptyListComponent from '../components/EmptyListComponent';
 
 const Cart = () => {
-	const [triggerPost] = usePostOrderMutation();
+	const navigation = useNavigation();
+	const [triggerPost] = usePostOrdersMutation();
+	const [triggerCelanCart] = useCleanCartMutation();
 	const localId = useSelector((state) => state.user.localId);
-	const { data: cart } = useGetCartQuery({ localId });
+	const { data: cart, isLoading } = useGetCartQuery({ localId });
 	const [total, setTotal] = useState(0);
 
 	useEffect(() => {
@@ -20,11 +25,22 @@ const Cart = () => {
 	}, [cart]);
 
 	const confirmCart = () => {
-		triggerPost({
-			products: [{ id: 1, quantity: 1 }],
-			total: 123,
-		});
+		const createdAt = new Date().toLocaleString();
+		const order = {
+			createdAt,
+			products: cart,
+			total,
+		};
+		triggerPost({ order, localId });
+		triggerCelanCart({ localId });
+		navigation.navigate('Orders');
 	};
+
+	if (isLoading) return <LoadingSpinner />;
+	if (!cart)
+		return (
+			<EmptyListComponent message='No hay productos en el carrito, quieres llenarlo?' />
+		);
 
 	return (
 		<ErrorBoundary>

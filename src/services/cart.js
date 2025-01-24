@@ -9,12 +9,19 @@ export const cartApi = createApi({
 		getCart: builder.query({
 			query: ({ localId }) => `carts/${localId}.json`,
 			transformResponse: (response) => {
+				if (!response) {
+					return null;
+				}
 				const data = Object.entries(response).map((item) => ({
 					...item[1],
 					id: item[0],
 				}));
 				return data;
 			},
+			providesTags: ['addProducts', 'deleteProducts'],
+		}),
+		getProduct: builder.query({
+			query: ({ localId, productId }) => `carts/${localId}/${productId}.json`,
 			providesTags: ['addProducts', 'deleteProducts'],
 		}),
 		addToCart: builder.mutation({
@@ -32,6 +39,13 @@ export const cartApi = createApi({
 			}),
 			invalidatesTags: ['deleteProducts'],
 		}),
+		cleanCart: builder.mutation({
+			query: ({ localId }) => ({
+				url: `carts/${localId}.json`,
+				method: 'DELETE',
+			}),
+			invalidatesTags: ['deleteProducts'],
+		}),
 	}),
 });
 
@@ -39,4 +53,6 @@ export const {
 	useGetCartQuery,
 	useAddToCartMutation,
 	useDeleteFromCartMutation,
+	useCleanCartMutation,
+	useGetProductQuery,
 } = cartApi;

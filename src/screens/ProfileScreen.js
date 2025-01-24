@@ -19,29 +19,37 @@ const ProfileScreen = () => {
 
 	return (
 		<View style={styles.container}>
-			<View style={styles.imageContainer}>
-				<Image
-					source={
-						data?.image
-							? { uri: data.image }
-							: require('../../assets/profile_default.png')
-					}
-					resizeMode='contain'
-					style={styles.image}
+			<View style={styles.profileSection}>
+				<View style={styles.imageContainer}>
+					<Image
+						source={
+							data?.image
+								? { uri: data.image }
+								: require('../../assets/profile_default.png')
+						}
+						resizeMode='contain'
+						style={styles.image}
+					/>
+				</View>
+				<SubmitButton
+					title={profileButtonText}
+					onPress={() => navigation.navigate('ImageSelector')}
+					style={styles.profileButton}
 				/>
 			</View>
-			<SubmitButton
-				title={profileButtonText}
-				onPress={() => navigation.navigate('ImageSelector')}
-			/>
-			<SubmitButton
-				title={locationButtonText}
-				onPress={() => navigation.navigate('LocationSelector')}
-			/>
-			<View>
-				<Text style={styles.address}>
-					Dirección: {data?.address || 'No definida'}
-				</Text>
+
+			<View style={styles.locationSection}>
+				<View style={styles.addressContainer}>
+					<Text style={styles.addressLabel}>Dirección:</Text>
+					<Text style={styles.addressText}>
+						{data?.address || 'No definida'}
+					</Text>
+				</View>
+				<SubmitButton
+					title={locationButtonText}
+					onPress={() => navigation.navigate('LocationSelector')}
+					style={styles.locationButton}
+				/>
 			</View>
 		</View>
 	);
@@ -52,27 +60,49 @@ export default ProfileScreen;
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		justifyContent: 'center',
 		alignItems: 'center',
 		backgroundColor: '#fff',
+		padding: 20,
+	},
+	profileSection: {
+		flexDirection: 'row',
+		alignItems: 'center',
+		marginBottom: 20,
 	},
 	imageContainer: {
-		width: 180,
-		height: 180,
+		width: 150,
+		height: 150,
 		borderRadius: 90,
 		overflow: 'hidden',
-		marginBottom: 16,
+		marginRight: 20,
 	},
 	image: {
-		width: 180,
-		height: 180,
+		width: '100%',
+		height: '100%',
 	},
-	title: {
-		fontSize: 24,
-		fontWeight: 'bold',
+	profileButton: {
+		flex: 1,
 	},
-	address: {
+	locationSection: {
+		flexDirection: 'row',
+		alignItems: 'flex-start',
+		width: '100%',
+		marginTop: 20,
+	},
+	addressContainer: {
+		flex: 1,
+	},
+	addressLabel: {
 		fontSize: 18,
-		marginTop: 16,
+		fontWeight: 'bold',
+		marginBottom: 4,
+	},
+	addressText: {
+		fontSize: 16,
+		color: '#666',
+		flexWrap: 'wrap',
+	},
+	locationButton: {
+		marginLeft: 20,
 	},
 });

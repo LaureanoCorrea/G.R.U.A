@@ -19,7 +19,7 @@ Asegúrate de tener instalados los siguientes programas:
 1. Clona este repositorio:
 
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone <https://github.com/LaureanoCorrea/ecommerce.git>
    ```
 
 2. Ve al directorio del proyecto:

@@ -5,7 +5,6 @@ import fonts from './src/globals/fonts';
 import Navigator from './src/Navigation/Navigator';
 import { Provider } from 'react-redux';
 import store from './src/store';
-import { init } from './src/config/dbSqlite';
 
 export default function App() {
 	const [fontsLoaded] = useFonts(fonts);

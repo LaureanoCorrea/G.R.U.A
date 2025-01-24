@@ -1,22 +1,47 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import EvilIcons from '@expo/vector-icons/EvilIcons';
 import ErrorBoundary from '../ErrorBoundary';
+import { useNavigation } from '@react-navigation/native';
+import { useSelector } from 'react-redux';
+import { useDeleteOrderMutation } from '../services/orders';
 
 const CardOrders = ({ order }) => {
-	const date = new Date(order.createdAt).toLocaleDateString();
+	const localId = useSelector((state) => state.user.localId);
+	const [triggerDeleteOrder] = useDeleteOrderMutation();
+	const navigation = useNavigation();
+
+	const deleteOrder = () => {
+		triggerDeleteOrder({ localId, orderId: order.id });
+	};
+
 	return (
 		<ErrorBoundary>
 			<View style={styles.container}>
 				<View style={styles.content}>
 					<Text style={styles.text}>Order ID: {order.id}</Text>
-					<Text style={styles.text}>Fecha de compra: {date}</Text>
+					<Text style={styles.text}>Fecha de compra: {order.createdAt}</Text>
 					<Text style={styles.text}>Total de la compra: ${order.total}</Text>
 				</View>
-				<EvilIcons
-					name='search'
-					size={24}
-					color='black'
-				/>
+				<View style={styles.icons}>
+					<Pressable
+						onPress={() => {
+							navigation.navigate('AllOrders', { order });
+						}}
+					>
+						<EvilIcons
+							name='search'
+							size={30}
+							color='black'
+						/>
+					</Pressable>
+					<Pressable onPress={deleteOrder}>
+						<EvilIcons
+							name='trash'
+							size={30}
+							color='black'
+						/>
+					</Pressable>
+				</View>
 			</View>
 		</ErrorBoundary>
 	);
@@ -50,5 +75,8 @@ const styles = StyleSheet.create({
 	text: {
 		fontSize: 16,
 		marginBottom: 4,
+	},
+	icons: {
+		gap: 17,
 	},
 });

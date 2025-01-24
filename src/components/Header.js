@@ -1,7 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import colors from '../globals/colors';
 import GoBack from './GoBack';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import ErrorBoundary from '../ErrorBoundary';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { useDispatch } from 'react-redux';
@@ -10,16 +10,22 @@ import { deleteUser } from '../features/userSlice';
 
 const Header = ({ title }) => {
 	const navigate = useNavigation();
+	const route = useRoute();
 	const dispatch = useDispatch();
 
 	const onLogout = () => {
 		deleteSession();
 		dispatch(deleteUser());
 	};
+
+	const noGoBackRoutes = ['Home', 'MainCart', 'OrderScreen', 'MyProfile'];
+
 	return (
 		<ErrorBoundary>
 			<View style={styles.container}>
-				{navigate.canGoBack() ? <GoBack /> : null}
+				{!noGoBackRoutes.includes(route.name) && navigate.canGoBack() ? (
+					<GoBack />
+				) : null}
 				<Text style={styles.title}>{title}</Text>
 				<Pressable
 					styles={styles.logout}

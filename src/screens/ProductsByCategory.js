@@ -1,11 +1,13 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import colors from '../globals/colors';
 import ShadowCard from '../components/wrappers/ShadowCard';
 import Search from '../components/Search';
 import CardProducts from '../components/CardProducts';
 import { useGetProductsQuery } from '../services/shop';
 import ErrorBoundary from '../ErrorBoundary';
+import LoadingSpinner from '../components/LoadingSpinner';
+import EmptyListComponent from '../components/EmptyListComponent';
 
 const ProductsByCategory = ({ route }) => {
 	const { category } = route.params;
@@ -17,31 +19,23 @@ const ProductsByCategory = ({ route }) => {
 
 	useEffect(() => {
 		if (isSuccess) {
-			setProducts(Object.values(data));
-		}
-	}, [isSuccess, data]);
-
-	useEffect(() => {
-		if (isSuccess) {
-			setProducts(
-				Object.values(data).filter((product) =>
-					product.name?.toLowerCase().includes(keyword.toLowerCase())
-				)
+			const filteredProducts = Object.values(data).filter((product) =>
+				product.name?.toLowerCase().includes(keyword.toLowerCase())
 			);
+			setProducts(filteredProducts);
 		}
-	}, [keyword, isSuccess]);
+	}, [keyword, isSuccess, data]);
 
-	if (isLoading)
-		return (
-			<View>
-				<Text>Cargando...</Text>
-			</View>
-		);
+	const handleKeywordChange = useCallback((text) => setKeyword(text), []);
+
+	if (isLoading) return <LoadingSpinner />;
+	if (products.length === 0)
+		return <EmptyListComponent message='No hay productos en esta categoría.' />;
 
 	return (
 		<ErrorBoundary>
 			<View style={styles.container}>
-				<Search onChangeKeyword={(text) => setKeyword(text)} />
+				<Search onChangeKeyword={handleKeywordChange} />
 				<ShadowCard>
 					<FlatList
 						data={products}
@@ -58,6 +52,9 @@ const ProductsByCategory = ({ route }) => {
 								No se encontraron productos en esta categoría.
 							</Text>
 						}
+						initialNumToRender={10}
+						maxToRenderPerBatch={10}
+						windowSize={5}
 					/>
 				</ShadowCard>
 			</View>

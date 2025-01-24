@@ -1,5 +1,4 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Text, View } from 'react-native-web';
 import CartScreen from '../screens/CartScreen';
 import Header from '../components/Header';
 

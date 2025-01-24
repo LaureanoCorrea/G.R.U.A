@@ -19,7 +19,7 @@ const CardForCart = ({ product }) => {
 			<View style={styles.container}>
 				<Image
 					style={styles.image}
-					source={{ uri: images[1] }}
+					source={{ uri: images[0] }}
 				/>
 
 				<View style={styles.content}>

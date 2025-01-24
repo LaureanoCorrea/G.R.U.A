@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
 class ErrorBoundary extends Component {
@@ -8,12 +8,10 @@ class ErrorBoundary extends Component {
 	};
 
 	static getDerivedStateFromError(error) {
-		// Actualiza el estado para indicar que se ha producido un error
 		return { hasError: true };
 	}
 
 	componentDidCatch(error, errorInfo) {
-		// Puedes enviar los detalles del error a un servicio de monitoreo
 		console.log('Error:', error);
 		console.log('Detalles del error:', errorInfo);
 		this.setState({ errorInfo });
