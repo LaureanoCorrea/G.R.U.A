@@ -6,6 +6,7 @@ import InputsBaseDomain from '../components/InputsBaseDomain';
 import InputsOriginDestination from '../components/InputsOriginDestination';
 import SuggestionsList from '../components/SuggestionsList';
 import MapViewComponent from '../components/MapViewComponent';
+import { fetchRoute } from '../Js/RouteUtils';
 
 const StartTravel = () => {
 	const [base, setBase] = useState(null);
@@ -147,68 +148,72 @@ const StartTravel = () => {
 	};
 
 	// Obtener la ruta
-	const fetchRoute = async () => {
-		if (!base || !origin || !destination) {
-			Alert.alert('Error', 'Primero debes definir la base, origen y destino.');
-			return;
-		}
-
-		const baseLatLng = `${base.latitude},${base.longitude}`;
-		const originLatLng = `${origin.latitude},${origin.longitude}`;
-		const destinationLatLng = `${destination.latitude},${destination.longitude}`;
-
-		try {
-			const firstLegResponse = await axios.get(
-				`https://maps.googleapis.com/maps/api/directions/json`,
-				{
-					params: {
-						origin: baseLatLng,
-						destination: originLatLng,
-						key: GOOGLE_API_KEY,
-					},
-				}
-			);
-
-			const secondLegResponse = await axios.get(
-				`https://maps.googleapis.com/maps/api/directions/json`,
-				{
-					params: {
-						origin: originLatLng,
-						destination: destinationLatLng,
-						key: GOOGLE_API_KEY,
-					},
-				}
-			);
-
-			if (
-				firstLegResponse.data.routes.length === 0 ||
-				secondLegResponse.data.routes.length === 0
-			) {
-				Alert.alert('Error', 'No se encontró una ruta válida.');
-				return;
-			}
-
-			const firstLegPoints =
-				firstLegResponse.data.routes[0].overview_polyline.points;
-			const secondLegPoints =
-				secondLegResponse.data.routes[0].overview_polyline.points;
-
-			const decodedFirstLeg = decodePolyline(firstLegPoints);
-			const decodedSecondLeg = decodePolyline(secondLegPoints);
-
-			const fullRoute = [...decodedFirstLeg, ...decodedSecondLeg];
-			setRoute(fullRoute);
-			setIsJourneyActive(true);
-
-			Alert.alert('Ruta generada', 'Se ha trazado la ruta correctamente.');
-		} catch (error) {
-			console.error('Error fetching route:', error);
-			Alert.alert(
-				'Error',
-				'Hubo un problema al obtener la ruta. Por favor, verifica tu conexión a Internet o intenta nuevamente.'
-			);
-		}
+	const handleFetchRoute = () => {
+		fetchRoute(base, origin, destination, setRoute, setIsJourneyActive); // Llamada a la función externa
 	};
+
+	// const fetchRoute = async () => {
+	// 	if (!base || !origin || !destination) {
+	// 		Alert.alert('Error', 'Primero debes definir la base, origen y destino.');
+	// 		return;
+	// 	}
+
+	// 	const baseLatLng = `${base.latitude},${base.longitude}`;
+	// 	const originLatLng = `${origin.latitude},${origin.longitude}`;
+	// 	const destinationLatLng = `${destination.latitude},${destination.longitude}`;
+
+	// 	try {
+	// 		const firstLegResponse = await axios.get(
+	// 			`https://maps.googleapis.com/maps/api/directions/json`,
+	// 			{
+	// 				params: {
+	// 					origin: baseLatLng,
+	// 					destination: originLatLng,
+	// 					key: GOOGLE_API_KEY,
+	// 				},
+	// 			}
+	// 		);
+
+	// 		const secondLegResponse = await axios.get(
+	// 			`https://maps.googleapis.com/maps/api/directions/json`,
+	// 			{
+	// 				params: {
+	// 					origin: originLatLng,
+	// 					destination: destinationLatLng,
+	// 					key: GOOGLE_API_KEY,
+	// 				},
+	// 			}
+	// 		);
+
+	// 		if (
+	// 			firstLegResponse.data.routes.length === 0 ||
+	// 			secondLegResponse.data.routes.length === 0
+	// 		) {
+	// 			Alert.alert('Error', 'No se encontró una ruta válida.');
+	// 			return;
+	// 		}
+
+	// 		const firstLegPoints =
+	// 			firstLegResponse.data.routes[0].overview_polyline.points;
+	// 		const secondLegPoints =
+	// 			secondLegResponse.data.routes[0].overview_polyline.points;
+
+	// 		const decodedFirstLeg = decodePolyline(firstLegPoints);
+	// 		const decodedSecondLeg = decodePolyline(secondLegPoints);
+
+	// 		const fullRoute = [...decodedFirstLeg, ...decodedSecondLeg];
+	// 		setRoute(fullRoute);
+	// 		setIsJourneyActive(true);
+
+	// 		Alert.alert('Ruta generada', 'Se ha trazado la ruta correctamente.');
+	// 	} catch (error) {
+	// 		console.error('Error fetching route:', error);
+	// 		Alert.alert(
+	// 			'Error',
+	// 			'Hubo un problema al obtener la ruta. Por favor, verifica tu conexión a Internet o intenta nuevamente.'
+	// 		);
+	// 	}
+	// };
 
 	// Cancelar el viaje
 	const cancelJourney = () => {
@@ -231,45 +236,6 @@ const StartTravel = () => {
 				},
 			]
 		);
-	};
-
-	// Decodificar la polyline
-	const decodePolyline = (encoded) => {
-		let points = [];
-		let index = 0,
-			len = encoded.length;
-		let lat = 0,
-			lng = 0;
-
-		while (index < len) {
-			let b,
-				shift = 0,
-				result = 0;
-			do {
-				b = encoded.charCodeAt(index++) - 63;
-				result |= (b & 0x1f) << shift;
-				shift += 5;
-			} while (b >= 0x20);
-			let dlat = result & 1 ? ~(result >> 1) : result >> 1;
-			lat += dlat;
-
-			shift = 0;
-			result = 0;
-			do {
-				b = encoded.charCodeAt(index++) - 63;
-				result |= (b & 0x1f) << shift;
-				shift += 5;
-			} while (b >= 0x20);
-			let dlng = result & 1 ? ~(result >> 1) : result >> 1;
-			lng += dlng;
-
-			points.push({
-				latitude: lat / 1e5,
-				longitude: lng / 1e5,
-			});
-		}
-
-		return points;
 	};
 
 	return (
@@ -303,7 +269,7 @@ const StartTravel = () => {
 				<InputsOriginDestination
 					inputValues={inputValues}
 					handleInputChange={handleInputChange}
-					fetchRoute={fetchRoute}
+					fetchRoute={handleFetchRoute}
 				/>
 			)}
 
