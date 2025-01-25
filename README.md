@@ -106,3 +106,4 @@ Asegúrate de tener instalados los siguientes programas:
 ## 📧 Contacto
 
 Si tienes preguntas o problemas, no dudes en contactarme en: [loriensdesign@gmail.com](mailto:loriensdesign@gmail.com)
+# G.R.U.A
