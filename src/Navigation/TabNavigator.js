@@ -22,6 +22,19 @@ const TabNavigator = () => {
 				}}
 			>
 				<Tab.Screen
+					name='Profile'
+					component={ProfileStack}
+					options={{
+						tabBarIcon: ({ focused }) => (
+							<TabBarIcon
+								text='Perfil'
+								icon='user-astronaut'
+								focused={focused}
+							/>
+						),
+					}}
+				/>
+				<Tab.Screen
 					name='Shop'
 					component={ShopStack}
 					options={{
@@ -55,20 +68,6 @@ const TabNavigator = () => {
 							<TabBarIcon
 								text='Ordenes'
 								icon='file-invoice'
-								focused={focused}
-							/>
-						),
-					}}
-				/>
-
-				<Tab.Screen
-					name='Profile'
-					component={ProfileStack}
-					options={{
-						tabBarIcon: ({ focused }) => (
-							<TabBarIcon
-								text='Perfil'
-								icon='user-astronaut'
 								focused={focused}
 							/>
 						),

@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import ProfileScreen from '../screens/ProfileScreen';
 import ImageSelector from '../screens/ImageSelector';
 import LocationSelector from '../screens/LocationSelector';
+import StartTravel from '../screens/StartTravel';
+import { FontDisplay } from 'expo-font';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +28,10 @@ const ProfileStack = () => {
 			<Stack.Screen
 				name='LocationSelector'
 				component={LocationSelector}
+			/>
+			<Stack.Screen
+				name='StartTravel'
+				component={StartTravel}
 			/>
 		</Stack.Navigator>
 	);

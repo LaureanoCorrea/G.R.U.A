@@ -1,31 +1,29 @@
 {
-  "expo": {
-    "name": "ecommerce",
-    "slug": "ecommerce",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/logo.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/Loading_2.gif",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/Loading_2.gif",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/Loading_2.gif"
-    },
-    "plugins": [
-      "expo-sqlite"
-    ]
-  }
+	"expo": {
+		"name": "G.R.U.A",
+		"slug": "G.R.U.A",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/logo.png",
+		"userInterfaceStyle": "light",
+		"newArchEnabled": true,
+		"splash": {
+			"image": "./assets/Loading_2.gif",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/Loading_2.gif",
+				"backgroundColor": "#ffffff"
+			}
+		},
+		"web": {
+			"favicon": "./assets/Loading_2.gif"
+		},
+		"plugins": ["expo-sqlite"]
+	}
 }

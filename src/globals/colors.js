@@ -1,8 +1,8 @@
 const colors = {
-	primary: '#85B93A',
-	secondary: '#1DA370',
-	tertiary: '#78F060',
-	enchant: '#60F0AE',
+	primary: '#2B54FA',
+	secondary: '#8272F7',
+	tertiary: '#AE72F7',
+	enchant: '#72E1F7',
 	white: '#FFFFFF',
 	black: '#000000',
 	gray: '#CCCCCC',

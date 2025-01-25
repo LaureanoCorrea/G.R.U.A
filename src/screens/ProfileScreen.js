@@ -14,8 +14,8 @@ const ProfileScreen = () => {
 		: 'Agrega tu foto de perfil';
 
 	const locationButtonText = data?.address
-		? 'Cambia tu localización'
-		: 'Agrega tu localización';
+		? 'Cambia tu Base'
+		: 'Agrega tu Base';
 
 	return (
 		<View style={styles.container}>
@@ -49,6 +49,13 @@ const ProfileScreen = () => {
 					title={locationButtonText}
 					onPress={() => navigation.navigate('LocationSelector')}
 					style={styles.locationButton}
+				/>
+			</View>
+			<View style={styles.startTravel}>
+				<SubmitButton
+					title='StartTravel'
+					onPress={() => navigation.navigate('StartTravel')}
+					style={styles.startTravelButton}
 				/>
 			</View>
 		</View>
@@ -104,5 +111,11 @@ const styles = StyleSheet.create({
 	},
 	locationButton: {
 		marginLeft: 20,
+	},
+	startTravel: {
+		marginTop: 20,
+	},
+	startTravelButton: {
+		width: '100%',
 	},
 });
